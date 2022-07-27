@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  height: 100vh;
+  overflow: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  /* margin-top: 10%; */
+}
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+  padding: 1.2rem;
+  border-radius: 7px 0 0 7px;
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+  padding: 1rem;
+  padding-bottom: 17px;
+  border-radius: 0 0 0 0;
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  padding: 0.9rem;
+  border-radius: 0 7px 7px 0;
+}
+.cars-container {
+  margin-right: 67%;
+  margin-top: 6%;
+  height: 35px;
+  width: 45px;
+}
+.main-header {
+  font-family: "Big Shoulders Display", cursive;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  letter-spacing: 3px;
+}
+.letter-container {
+  font-family: "Lexend Deca", sans-serif;
+  color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: start;
+}
+.all-btn {
+  margin-top: 30%;
+  margin-bottom: 20%;
+  padding: 14px;
+  width: 146px;
+  border-radius: 25px;
+  outline: none;
+  border: 2px solid hsl(0, 0%, 95%);
+  bottom: 42px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sedan button {
+  background: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+}
+.suvs button {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+}
+.luxury button {
+  background: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+}
+button:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+button:active {
+  transform: scale(0.9);
+}
+@media only screen and (max-width: 644px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .sedan {
+    border-radius: 7px 7px 0 0;
+    padding: 20px;
+  }
+  .suvs {
+    border-radius: 0px;
+  }
+  .luxury {
+    border-radius: 0px;
+  }
+}
